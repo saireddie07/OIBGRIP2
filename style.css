@@ -1,0 +1,301 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.home img{
+    height: 400px;
+    margin-right: 50px;
+    margin-top: 30px;
+    background-color: rgb(255, 115, 0);
+    border-radius: 300px;
+   transition: 0.5s;
+    float:right;
+}
+.home img:hover{
+    
+    height: 450px;
+}
+.home{
+    width:100%;
+    height:100%; 
+    background-color: rgb(1, 1, 65);  
+    background-size: cover;
+    background-position: center;
+}
+.bar{
+    display:flex;
+    height:100px;
+    width:100%;
+    
+}
+
+.bar h1 b{
+color:rgb(255, 0, 0);
+padding-right: 20px;
+
+
+}
+.bar h1{
+
+    padding-top: 20px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    font-size: 60px;
+    font-family:sans-serif;
+    color: rgb(168, 227, 255);
+}
+.logo{
+    width:600px;
+}
+.bar ul{
+    display:flex;
+    float: right;
+    list-style: none;
+}
+ul li{
+    padding-left: 120px;
+    padding-top: 40px;
+}
+ul li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 20px;
+    position: relative;
+}
+.bar ul li a::after{
+    content: '';
+    width:0;
+    height:3px;
+    background: rgb(255, 230, 0);
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.5s;
+}
+.bar ul li a:hover::after{
+    width:100%;
+}
+.home p{
+    color: white;
+    margin-left: 150px;
+    margin-top: 100px;
+    font-size: 50px;
+    font-family: Verdana;
+}
+.name{
+    margin-left:150px;
+
+    font-size:80px;
+    font-family: 'Segoe UI';
+    color:rgb(237, 202, 30)
+}
+.hire{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-left: 150px;
+    height:70px;
+    width:250px;
+    border:none;
+    border-radius: 10px;
+    transition:0.75s;
+}
+.hire:hover{
+    background-color: rgb(183, 2, 255);
+}
+.list{
+    padding-left: 200px;
+    
+    display:flex;
+    list-style: none;
+}
+.list li{
+    padding-left:7px;
+}
+.list li a{
+    color: brown;
+    
+    font-size: 25px;
+}
+.portfolio{
+    height:100%;
+    width:100%;
+    background-color: rgb(1, 1, 65);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    font-family:  sans-serif;
+    
+}
+.portfolio h1{
+    margin-top: 100px;
+    padding-left: 400px;
+    font-size: 60px;
+    color:rgb(255, 0, 0);
+    height:70px;
+    text-align: center;
+    background-color: white;
+}
+.edu{
+    margin-top:230px;
+    padding:0px 35px;
+    border-left: 2px solid;
+    color: aliceblue;
+}
+.box{
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    border:1px solid;
+    background-color:black;
+    cursor:pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+.box:hover{
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border:1px solid transparent;
+}
+.box::before{
+    content:'';
+    position:absolute;
+    width:18px;
+    height:18px;
+    border-radius: 50%;
+    right:calc(100% + 26px);
+    top:0;
+    background-color: #11a372;
+    border:3px solid white;
+}
+.box h4{
+    position:relative;
+    color:#11a372;
+}
+.box h3{
+    font-size: 19px;
+    padding:10px 0px 6px;
+    font-family: Helvetica;
+    color: #0be4c0;
+}
+.box p{
+    line-height: 1.2;
+    color:#666;
+    font-size: 17px;
+}
+.skills{
+    height: 100%;
+    width:100%;
+    background-color: rgb(1, 1, 65);
+}
+.skills h1{
+    float: right;
+    margin-top: 100px;
+    padding-right: 600px;
+    font-size: 60px;
+    color:rgb(255, 0, 0);
+    height:70px;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: white;
+}
+.list1{
+    list-style: none;
+    text-align: center;
+    padding-top: 250px;
+    padding-right: 500px;
+    display: flex;
+}
+.skills img{
+    height:150px;
+    width:150px;
+    border: 3px;
+    border-color: white;
+    transition: 0.5s;
+
+}
+.skills ul li {
+    padding-left: 250px;
+    
+}
+.list2{
+    list-style: none;
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 500px;
+    display: flex;
+
+}
+.skills img:hover{
+    box-shadow: 0px 3px 12px 0px #ff0000;
+    margin-top: 30px;
+   
+}
+.contact{
+    padding-top:150px ;
+    height:80%;
+    padding-left: 100px;
+    width:100%;
+    background-color:rgb(1, 1, 65) ;
+}
+.contact h1{
+    padding: 20px;
+   
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(132, 113, 113);
+    font-size: 50px;
+    
+   
+    
+}
+.form{
+    padding-left: 20px;
+    display:grid;
+    height:80%;
+    width:60%;
+    background-color:rgb(1, 1, 65);
+    border-radius: 10px;
+    
+}
+.form h3{
+    padding-left: 30px;
+    font-size:50px;
+    padding-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    color: rgb(254, 172, 21);
+}
+.form input{
+    padding-left: 5px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: rgb(161, 86, 86);
+    margin: 20px;
+    border-color:aqua;
+    border-radius: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: rgb(1, 1, 65);
+    font-family:'Lucida Sans Unicode';
+}
+.form input::placeholder{
+    color:rgb(90, 85, 45);
+}
+.form button{
+    font-size: 30px;
+    padding: 10px;
+    width:300px;
+    color: rgb(169, 17, 17);
+    font-family:Verdana;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 255, 187, 0.873);
+}
+
